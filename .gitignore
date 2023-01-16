@@ -1,12 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+
+# node modules
+node_modules/*
+
 #Junk
 .DS_Store
 .vscode/
 .idea/
 
 # dependencies
-node_modules
+/node_modules
 /.pnp
 .pnp.js
 
