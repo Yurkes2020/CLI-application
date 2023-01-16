@@ -5,7 +5,6 @@ const {
   getContactById,
   removeContact,
   addContact,
-  updateContact,
 } = require('./contacts');
 
 const program = new Command();
