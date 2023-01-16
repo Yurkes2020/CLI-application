@@ -1,6 +1,6 @@
 # Получаем и выводим весь список контактов в виде таблицы (console.table)
 
-node index.js --action list
+https://prnt.sc/rm10gglecV8g
 
 # Получаем контакт по id
 
