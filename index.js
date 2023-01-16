@@ -38,15 +38,6 @@ async function invokeAction({ action, id, name, email, phone }) {
     case 'add':
       const newContact = await addContact(name, email, phone);
       console.table(newContact);
-      console.log('\x1B[31m Successfully added');
-      break;
-
-    case 'update':
-      const updatedContact = await updateContact(id, name, email, phone);
-      if (!updateContact) {
-        throw new Error(`Error with update contact`);
-      }
-      console.table(updatedContact);
       break;
 
     case 'remove':
@@ -55,7 +46,6 @@ async function invokeAction({ action, id, name, email, phone }) {
         throw new Error(`Contact with id ${id} not found`);
       }
       console.table(removedContact);
-      console.log('\x1B[31m Successfully deleted');
       break;
 
     default:

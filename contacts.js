@@ -60,24 +60,6 @@ async function addContact(name, email, phone) {
     await fs.writeFile(contactsPath, JSON.stringify(newData, null, 2));
     return newData;
   } catch (error) {
-    throw error
-  }
-}
-
-async function updateContact(id, name, email, phone) {
-  try {
-    const contacts = await listContacts();
-
-    const idx = contacts.findIndex((contact) => contact.id === id);
-    if (idx === -1) {
-      return null;
-    }
-
-    contacts[idx] = { id, name, email, phone };
-
-    await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
-    return contacts[idx];
-  } catch (error) {
     throw error;
   }
 }
@@ -87,5 +69,4 @@ module.exports = {
   getContactById,
   removeContact,
   addContact,
-  updateContact,
 };
