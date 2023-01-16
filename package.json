@@ -1,4 +1,23 @@
 {
+  "name": "cli-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yurkes2020/CLI-application.git"
+  },
+  "author": "yurii shulga <yurkes2020@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yurkes2020/CLI-application/issues"
+  },
+  "homepage": "https://github.com/Yurkes2020/CLI-application#readme",
   "devDependencies": {
     "nodemon": "^2.0.20"
   }
